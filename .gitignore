@@ -1,1 +1,9 @@
-      .idea
+# Don't check auto-generated stuff into git
+frontend/build
+frontend/node_modules
+stats.json
+
+# Cruft
+.DS_Store
+npm-debug.log
+.idea
