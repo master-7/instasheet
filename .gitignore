@@ -1,9 +1,12 @@
 # Don't check auto-generated stuff into git
-frontend/build
+frontend/public
 frontend/node_modules
 stats.json
 
 # Cruft
 .DS_Store
-npm-debug.log
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 .idea
