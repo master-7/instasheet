@@ -21,6 +21,7 @@
     "url": "https://gitlab.com/master-7/instasheet"
   },
   "dependencies": {
+    "antd": "^2.11.2",
     "babel-plugin-transform-es2015-modules-commonjs-simple": "^6.7.4",
     "babel-polyfill": "^6.23.0",
     "eslint-loader": "^1.8.0",

@@ -5,6 +5,10 @@ import React, {Component} from 'react'
 import {Provider} from 'react-redux'
 import { BrowserRouter } from 'react-router-dom'
 
+import 'antd/dist/antd.css'
+
+import Layout from 'app/pages/Layout'
+
 type Props = {
     store: Object
 };
@@ -17,9 +21,7 @@ export default class App extends Component {
         return (
             <Provider store={store}>
                 <BrowserRouter>
-                    <div>
-                        Instasheet ready!
-                    </div>
+                    <Layout />
                 </BrowserRouter>
             </Provider>
         );

@@ -1,7 +1,0 @@
-{
-  "name": "AIFork",
-  "start_url": "index.html",
-  "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#FFFFFF"
-}
