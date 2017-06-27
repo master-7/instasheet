@@ -1,7 +1,7 @@
 import React, {PureComponent} from 'react'
 import {Layout, Menu} from 'antd'
 
-// import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 export default class Header extends PureComponent {
     render () {
@@ -14,7 +14,11 @@ export default class Header extends PureComponent {
                     mode="horizontal"
                     defaultSelectedKeys={['2']}
                 >
-                        <Menu.Item key="1">Search</Menu.Item>
+                    <Menu.Item key="1">
+                        <Link to="/qwe">
+                            Search
+                        </Link>
+                    </Menu.Item>
                 </Menu>
             </Header>
         )
