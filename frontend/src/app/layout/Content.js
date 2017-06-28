@@ -1,21 +1,27 @@
 import React, {Component} from 'react'
-import {Layout, Breadcrumb, Icon, Menu} from 'antd'
+import {Layout, Icon, Menu} from 'antd'
 import {Route, Switch} from 'react-router-dom';
 
-import Home from '../Home';
+import Breadcrumbs from 'app/components/Breadcrumbs'
+import BreadcrumbsItem from 'app/components/Breadcrumbs/Item'
+
+import StyledLayout from 'app/components/Layout'
+
+import Home from 'app/pages/Home/index';
 
 export default class Content extends Component {
     render () {
-        const { SubMenu } = Menu;
+        const {SubMenu} = Menu;
         const {Content, Sider} = Layout;
+
         return (
             <Content>
-                <Breadcrumb style={{ margin: '10px' }}>
-                    <Breadcrumb.Item>Home</Breadcrumb.Item>
-                    <Breadcrumb.Item>List</Breadcrumb.Item>
-                    <Breadcrumb.Item>App</Breadcrumb.Item>
-                </Breadcrumb>
-                <Layout style={{ padding: '24px 0', background: '#fff' }}>
+                <Breadcrumbs>
+                    <BreadcrumbsItem>Home</BreadcrumbsItem>
+                    <BreadcrumbsItem>List</BreadcrumbsItem>
+                    <BreadcrumbsItem>App</BreadcrumbsItem>
+                </Breadcrumbs>
+                <StyledLayout>
                     <Sider width={200} style={{ background: '#fff' }}>
                         <Menu
                             mode="inline"
@@ -43,7 +49,7 @@ export default class Content extends Component {
                             </SubMenu>
                         </Menu>
                     </Sider>
-                    <Content style={{ padding: '0 24px', minHeight: 280 }}>
+                    <Content style={{ padding: '0 24px', minHeight: '100%' }}>
                         <Switch>
                             <Route
                                 exact
@@ -55,7 +61,7 @@ export default class Content extends Component {
                             />
                         </Switch>
                     </Content>
-                </Layout>
+                </StyledLayout>
             </Content>
         )
     }

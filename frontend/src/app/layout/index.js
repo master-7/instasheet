@@ -2,16 +2,16 @@ import React, {Component} from 'react'
 import {Layout} from 'antd'
 import Content from './Content'
 import Header from './Header'
+import Footer from 'app/components/Footer'
 
-export default class Main extends Component {
+export default class extends Component {
     render () {
-        const {Footer} = Layout;
         return (
             <Layout className="layout">
                 <Layout>
                     <Header/>
                     <Content/>
-                    <Footer style={{ textAlign: 'center' }}>
+                    <Footer>
                         Instasheet ©{new Date().getFullYear()}
                     </Footer>
                 </Layout>

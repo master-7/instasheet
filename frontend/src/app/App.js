@@ -7,7 +7,7 @@ import {BrowserRouter} from 'react-router-dom'
 
 import 'antd/dist/antd.css'
 
-import Main from 'app/pages/Main'
+import Main from 'app/layout'
 
 type Props = {
     store: Object
