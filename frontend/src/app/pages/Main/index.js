@@ -8,11 +8,13 @@ export default class Main extends Component {
         const {Footer} = Layout;
         return (
             <Layout className="layout">
-                <Header/>
-                <Content/>
-                <Footer style={{ textAlign: 'center' }}>
-                    Instasheet ©{new Date().getFullYear()}
-                </Footer>
+                <Layout>
+                    <Header/>
+                    <Content/>
+                    <Footer style={{ textAlign: 'center' }}>
+                        Instasheet ©{new Date().getFullYear()}
+                    </Footer>
+                </Layout>
             </Layout>
         )
     }

@@ -7,12 +7,13 @@ export default class Header extends PureComponent {
     render () {
         const {Header} = Layout;
         return (
-            <Header>
+            <Header className="header">
                 <div className="logo" />
                 <Menu
                     theme="dark"
                     mode="horizontal"
                     defaultSelectedKeys={['2']}
+                    style={{ lineHeight: '64px' }}
                 >
                     <Menu.Item key="1">
                         <Link to="/qwe">
