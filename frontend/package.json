@@ -9,7 +9,9 @@
     "build": "webpack --config ./webpack.config.production.js --progress --env=production -p",
     "flow": "flow; test $? -eq 0 -o $? -eq 2",
     "test": "jest",
-    "test:watch": "npm test -- --watch"
+    "test:watch": "npm test -- --watch",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "contributors": [
     "NickMasters",
@@ -37,6 +39,7 @@
     "redux": "^3.7.0",
     "redux-actions": "^2.0.3",
     "redux-thunk": "^2.2.0",
+    "resolve-url-loader": "^2.1.0",
     "styled-components": "^2.1.0"
   },
   "devDependencies": {
@@ -55,14 +58,12 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.24.1",
     "babel-runtime": "^6.23.0",
-    "css-loader": "^0.28.4",
     "eslint": "^4.1.0",
     "eslint-config-airbnb": "^15.0.1",
     "eslint-plugin-flowtype": "^2.34.0",
     "eslint-plugin-import": "^2.6.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.1.0",
-    "extract-text-webpack-plugin": "^2.1.2",
     "file-loader": "^0.11.2",
     "flow-bin": "^0.48.0",
     "html-webpack-plugin": "^2.29.0",
@@ -71,13 +72,12 @@
     "react-test-renderer": "^15.6.1",
     "redux-logger": "^3.0.6",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.1",
     "url-loader": "^0.5.9",
-    "vue-style-loader": "^3.0.1",
     "webpack": "^3.0.0",
     "webpack-cleanup-plugin": "^0.5.1",
     "webpack-dashboard": "^0.4.0",
     "webpack-dev-server": "^2.5.0",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    "@storybook/react": "^3.1.7"
   }
 }

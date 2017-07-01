@@ -2,7 +2,6 @@
 
 const webpack = require('webpack');
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || '3000';
@@ -33,20 +32,6 @@ module.exports = {
                 use: [
                     'babel'
                 ]
-            },
-            {
-                test: /\.css$/,
-                use: ExtractTextPlugin.extract({
-                    use: 'css-loader',
-                    fallback: 'vue-style-loader'
-                })
-            },
-            {
-                test: /\.styl$/,
-                use: ExtractTextPlugin.extract({
-                    use: ['css-loader', 'stylus-loader'],
-                    fallback: 'vue-style-loader'
-                })
             },
             {
                 test: /\.svg$/,
@@ -91,10 +76,6 @@ module.exports = {
         port: PORT,
         host: HOST
     },
-
-    plugins: [
-        new ExtractTextPlugin('style.css')
-    ],
 
     resolve: {
         modules: [

@@ -30,7 +30,6 @@ module.exports = webpackMerge(commonConfig, {
         new HtmlWebpackPlugin({
             template: './src/index.html',
             files: {
-                css: ['style.css'],
                 js: ['bundle.js'],
             }
         }),
