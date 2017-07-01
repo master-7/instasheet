@@ -15,15 +15,6 @@ module.exports = webpackMerge(commonConfig, {
             minimize: false,
             debug: false
         }),
-        // new webpack.optimize.UglifyJsPlugin({
-        //     beautify: false,
-        //     mangle: true,
-        //     compress: {
-        //         warnings: false
-        //     },
-        //     comments: false
-        // }),
-        // new webpack.optimize.DedupePlugin(),
         new ImageminPlugin({
             svgo: {
                 removeEmptyContainers: true,

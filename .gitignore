@@ -1,5 +1,5 @@
 # Don't check auto-generated stuff into git
-frontend/public
+frontend/public/bundle.js
 frontend/node_modules
 stats.json
 

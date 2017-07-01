@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "description": "The Instagram photo search system",
   "scripts": {
-    "start": "webpack-dev-server --progress --env=development --watch",
-    "start-prod": "webpack-dev-server --env=production --env=production --watch",
+    "start": "npm run build && webpack-dev-server --progress --inline --content-base public/ --env=development --hot --colors",
+    "start-prod": "npm run build && webpack-dev-server --progress --inline --content-base public/ --env=production --env=production --hot --colors",
     "build-dev": "webpack --config ./webpack.config.development.js --progress --env=development",
-    "build": "webpack --config ./webpack.config.production.js --progress --env=production",
+    "build": "webpack --config ./webpack.config.production.js --progress --env=production -p",
     "flow": "flow; test $? -eq 0 -o $? -eq 2",
     "test": "jest",
     "test:watch": "npm test -- --watch"
@@ -33,6 +33,7 @@
     "react-redux": "^5.0.5",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
+    "react-scripts": "1.0.10",
     "redux": "^3.7.0",
     "redux-actions": "^2.0.3",
     "redux-thunk": "^2.2.0",

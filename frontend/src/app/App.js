@@ -3,11 +3,9 @@
  */
 import React, {Component} from 'react'
 import {Provider} from 'react-redux'
-import {BrowserRouter} from 'react-router-dom'
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
 
-import 'antd/dist/antd.css'
-
-import Main from 'app/layout'
+import Home from './modules/Home'
 
 type Props = {
     store: Object
@@ -21,7 +19,16 @@ export default class App extends Component {
         return (
             <Provider store={store}>
                 <BrowserRouter>
-                    <Main />
+                    <Switch>
+                        <Route
+                            exact
+                            path="/"
+                            component={Home}
+                        />
+                        <Route
+                            render={() => <h1>404</h1>}
+                        />
+                    </Switch>
                 </BrowserRouter>
             </Provider>
         );
