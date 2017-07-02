@@ -20,6 +20,11 @@ module.exports = {
         // your custom plugins
     ],
     module: {
-        // custom loaders
+        rules: [
+            {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                use: 'file-loader?name=images/[name].[ext]'
+            }
+        ]
     },
 };
