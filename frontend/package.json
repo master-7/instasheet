@@ -5,7 +5,7 @@
   "scripts": {
     "start": "webpack-dev-server --progress --inline --content-base public/ --env=development --hot --colors",
     "start-prod": "webpack-dev-server --progress --inline --content-base public/ --env=production --env=production --hot --colors",
-    "build-dev": "webpack --config ./webpack.config.development.js --progress --env=development",
+    "build-dev": "webpack --config ./webpack.config.development.js --progress --env=development -p",
     "build": "webpack --config ./webpack.config.production.js --progress --env=production -p",
     "flow": "flow; test $? -eq 0 -o $? -eq 2",
     "test": "jest",
@@ -15,7 +15,8 @@
   },
   "contributors": [
     "NickMasters",
-    "MaxSharov"
+    "MaxSharov",
+    "DmitriyNikolaev"
   ],
   "private": true,
   "repository": {
@@ -23,12 +24,10 @@
     "url": "https://gitlab.com/master-7/instasheet"
   },
   "dependencies": {
-    "antd": "^2.11.2",
     "babel-plugin-transform-es2015-modules-commonjs-simple": "^6.7.4",
     "babel-polyfill": "^6.23.0",
     "enzyme": "^2.9.1",
     "eslint-loader": "^1.8.0",
-    "express": "^4.15.3",
     "history": "^4.6.3",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
@@ -74,7 +73,6 @@
     "jest": "^20.0.4",
     "react-test-renderer": "^15.6.1",
     "redux-logger": "^3.0.6",
-    "stylus": "^0.54.5",
     "url-loader": "^0.5.9",
     "webpack": "^3.0.0",
     "webpack-cleanup-plugin": "^0.5.1",
