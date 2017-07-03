@@ -3,7 +3,7 @@
 import React, {PureComponent} from 'react'
 import styled from 'styled-components'
 
-import {Panels} from 'app/data/StyledConst'
+import {General, colors} from 'app/data/StyledConst'
 
 export default class Menu extends PureComponent {
     render () {
@@ -20,11 +20,11 @@ export default class Menu extends PureComponent {
 const StyledMenu = styled.div`
     user-select: none;
     width: 10em;
-    font-family: ${Panels.fontFamily};
+    font-family: ${General.fontFamily};
     border: none;
     text-align: left;
     box-sizing: border-box;
-    background: ${Panels.background};
+    background: ${colors.ebonyClay};
 `;
 
 const StyledMenuItems = styled.ul`

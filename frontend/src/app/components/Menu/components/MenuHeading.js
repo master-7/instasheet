@@ -3,7 +3,7 @@
 import React, {PureComponent} from 'react'
 import styled from 'styled-components'
 
-import {Panels} from 'app/data/StyledConst'
+import {colors} from 'app/data/StyledConst'
 
 export default class MenuHeading extends PureComponent {
     render () {
@@ -17,7 +17,7 @@ export default class MenuHeading extends PureComponent {
 
 const StyledMenuHeading = styled.li`
     font-size: 1.1em;
-    color: ${Panels.fontColorHead};
+    color: ${colors.kashimirBlue};
     padding: .5em 1em;
     text-transform: uppercase;
     text-decoration: none;

@@ -2,10 +2,11 @@
 
 import React from 'react'
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 
-const Logo = ({className}) => <a href="/" className={className}>
+const Logo = ({className}) => <Link to="/" className={className}>
     instasheet
-</a>;
+</Link>;
 
 export default styled(Logo)`
     color: white;

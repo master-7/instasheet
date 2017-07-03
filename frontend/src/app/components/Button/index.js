@@ -3,7 +3,7 @@
 import React, {PureComponent} from 'react'
 import styled from 'styled-components'
 
-import {General, ButtonStyles} from 'app/data/StyledConst'
+import {General, colors} from 'app/data/StyledConst'
 
 type Props = {
     onClick?: () => void,
@@ -32,10 +32,10 @@ const StyledButton = styled.button`
     font-family: ${General.fontFamily};
     font-size: 1.2em;
     padding: .5em 1em;
-    color: ${ButtonStyles.fontColor};
+    color: ${colors.tundora};
     border-radius: 2px;
     border: transparent;
-    background-color: ${ButtonStyles.background};
+    background-color: ${colors.mercury};
     text-decoration: none;
     text-align: center;
     white-space: nowrap;

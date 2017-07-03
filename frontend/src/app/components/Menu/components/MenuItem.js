@@ -4,7 +4,7 @@ import React, {PureComponent} from 'react'
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 
-import {Panels} from 'app/data/StyledConst'
+import {Panels, colors} from 'app/data/StyledConst'
 
 type Props = {
     children?: any,
@@ -43,12 +43,12 @@ const StyledMenuItem = styled.li`
 
 const StyledMenuItemLink = styled(Link)`
     text-decoration: none;
-    color: ${Panels.fontColor};
+    color: ${colors.white};
     padding: .5em 1em;
     display: block;
     text-decoration: none;
     white-space: nowrap;
     &:hover, &:focus {
-        background: ${Panels.elementIsActiveBackground};
+        background: ${colors.oxfordBlue};
     }
 `;

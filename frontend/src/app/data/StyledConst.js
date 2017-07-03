@@ -2,15 +2,13 @@ export const General = {
     fontFamily: 'FreeSans,Arimo,"Droid Sans",Helvetica,Arial,sans-serif'
 };
 
-export const Panels = {
-    fontFamily: 'FreeSans,Arimo,"Droid Sans",Helvetica,Arial,sans-serif',
-    fontColor: '#fff',
-    fontColorHead: 'rgb(75, 113, 151)',
-    background: 'rgb(37, 42, 58)',
-    elementIsActiveBackground: 'rgb(55, 60, 90)'
-};
-
-export const ButtonStyles = {
-    background: '#E6E6E6',
-    fontColor: '#444'
+export const colors = {
+    white: '#fff',
+    malibu: '#6FBEF3',
+    regentStBlue: '#AECFE5',
+    tundora: '#444',
+    mercury: '#E6E6E6',
+    kashimirBlue: '#4B7197',
+    oxfordBlue: '#373C5A',
+    ebonyClay: '#252A3A'
 };
