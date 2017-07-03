@@ -8,6 +8,7 @@ import {Panels} from 'app/data/StyledConst'
 
 type Props = {
     children?: any,
+    onClick?: () => void,
     href: string
 }
 
@@ -15,10 +16,17 @@ export default class MenuItem extends PureComponent {
     props: Props;
 
     render () {
-        const {children, href} = this.props;
+        const {
+            children,
+            href = '',
+            onClick = () => {}
+        } = this.props;
+
         return (
             <StyledMenuItem>
-                <StyledMenuItemLink to={href}>
+                <StyledMenuItemLink to={href}
+                                    onClick={onClick}
+                >
                     {children}
                 </StyledMenuItemLink>
             </StyledMenuItem>

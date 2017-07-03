@@ -12,8 +12,8 @@ storiesOf('Menu', module)
                 <MenuHeading>
                     Some head
                 </MenuHeading>
-                <MenuItem href="#">
-                    Some item
+                <MenuItem href="#" onClick={action('clicked')}>
+                    Click me!
                 </MenuItem>
                 <MenuItem href="#">
                     Some item 2

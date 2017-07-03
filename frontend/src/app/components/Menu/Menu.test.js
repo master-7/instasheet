@@ -1,7 +1,8 @@
 import React from 'react'
-import {Menu, MenuHeading, MenuItem} from './index'
 import {BrowserRouter} from 'react-router-dom'
 import {mount} from 'enzyme'
+
+import {Menu, MenuHeading, MenuItem} from './index'
 
 describe('Menu', () => {
     it('base render without heading', () => {
@@ -18,6 +19,25 @@ describe('Menu', () => {
         expect(wrapper.find('div ul')).toHaveLength(1);
         expect(wrapper.find('div ul li')).toHaveLength(1);
         expect(wrapper.find('div ul li a')).toHaveLength(1);
+    })
+    it('base render with item onClick handler', () => {
+        const onClickFunc = jest.genMockFunction(),
+            wrapper = mount(
+                <BrowserRouter>
+                    <Menu>
+                        <MenuItem href="#"
+                                  onClick={onClickFunc}>
+                            Click me!
+                        </MenuItem>
+                    </Menu>
+                </BrowserRouter>
+            );
+
+        const menuItem = wrapper.find('a');
+
+        menuItem.simulate('click');
+
+        expect(onClickFunc).toBeCalled();
     })
     it('base render with heading', () => {
         const wrapper = mount(
