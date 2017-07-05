@@ -1,7 +1,7 @@
 import React from 'react'
+import {mount} from 'enzyme'
 import Header, {MenuItem, Avatar} from './index'
 import avatarIMG from './tilo-avatar.png'
-import {mount} from 'enzyme'
 
 describe('Header', () => {
     it('base render', () => {
