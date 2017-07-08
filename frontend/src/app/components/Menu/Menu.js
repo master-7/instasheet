@@ -17,9 +17,10 @@ export default class Menu extends PureComponent {
     }
 }
 
-const StyledMenu = styled.div`
+const StyledMenu = styled.nav`
     user-select: none;
-    width: 10em;
+    width: 100%;
+    height: 100%;
     font-family: ${General.fontFamily};
     border: none;
     text-align: left;

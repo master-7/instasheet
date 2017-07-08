@@ -15,10 +15,10 @@ describe('Menu', () => {
                 </Menu>
             </BrowserRouter>
         );
-        expect(wrapper.find('div')).toHaveLength(1);
-        expect(wrapper.find('div ul')).toHaveLength(1);
-        expect(wrapper.find('div ul li')).toHaveLength(1);
-        expect(wrapper.find('div ul li a')).toHaveLength(1);
+        expect(wrapper.find('nav')).toHaveLength(1);
+        expect(wrapper.find('nav ul')).toHaveLength(1);
+        expect(wrapper.find('nav ul li')).toHaveLength(1);
+        expect(wrapper.find('nav ul li a')).toHaveLength(1);
     })
     it('base render with item onClick handler', () => {
         const onClickFunc = jest.genMockFunction(),
@@ -49,9 +49,9 @@ describe('Menu', () => {
                 </Menu>
             </BrowserRouter>
         );
-        expect(wrapper.find('div')).toHaveLength(1);
-        expect(wrapper.find('div ul')).toHaveLength(1);
-        expect(wrapper.find('div ul li')).toHaveLength(1);
+        expect(wrapper.find('nav')).toHaveLength(1);
+        expect(wrapper.find('nav ul')).toHaveLength(1);
+        expect(wrapper.find('nav ul li')).toHaveLength(1);
     })
     it('base render with heading and item', () => {
         const wrapper = mount(
@@ -66,8 +66,8 @@ describe('Menu', () => {
                 </Menu>
             </BrowserRouter>
         );
-        expect(wrapper.find('div')).toHaveLength(1);
-        expect(wrapper.find('div ul')).toHaveLength(1);
-        expect(wrapper.find('div ul li')).toHaveLength(2);
+        expect(wrapper.find('nav')).toHaveLength(1);
+        expect(wrapper.find('nav ul')).toHaveLength(1);
+        expect(wrapper.find('nav ul li')).toHaveLength(2);
     })
 });
