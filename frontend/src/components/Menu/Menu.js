@@ -3,7 +3,7 @@
 import React, {PureComponent} from 'react'
 import styled from 'styled-components'
 
-import {General, colors} from 'app/data/StyledConst'
+import {General, colors} from 'data/StyledConst'
 
 export default class Menu extends PureComponent {
     render () {

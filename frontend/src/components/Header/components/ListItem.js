@@ -2,7 +2,7 @@
 
 import React, {PureComponent} from 'react'
 import styled from 'styled-components'
-import {colors} from 'app/data/StyledConst'
+import {colors} from 'data/StyledConst'
 
 type Props = {
     isActive: boolean,

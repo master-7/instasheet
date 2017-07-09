@@ -4,7 +4,7 @@ import React, {PureComponent} from 'react'
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 
-import {Panels, colors} from 'app/data/StyledConst'
+import {colors} from 'data/StyledConst'
 
 type Props = {
     children?: any,

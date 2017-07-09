@@ -2,9 +2,9 @@ import 'babel-polyfill'
 import React from 'react'
 import {render} from 'react-dom'
 
-import App from './app'
+import App from 'modules/App'
 
-import appStore from './app/configureStore'
+import appStore from './configureStore'
 
 render(
     <App store={appStore} />,
